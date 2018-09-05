@@ -4,6 +4,8 @@ import { Injectable } from '@angular/core';
 
 @Injectable({providedIn: 'root'})
 export class BingMapsLoader implements IMapLoader {
+  key = 'QSJ56V37iKKbwpEugBDc~Vl9Jy0hBTmdWDsVEeUAadQ~AjEJdhwpQsQqJ19C1DLE5zaww9I1Yl5D3TQuafKinpYoNEFanCI8s_hA-iK_BOHj'
+
   promise:Promise<any>
 
   load() {
@@ -28,7 +30,7 @@ export class BingMapsLoader implements IMapLoader {
 
     var scriptNode = document.createElement('script');
     scriptNode.type = "text/javascript";
-    scriptNode.src = "https://www.bing.com/api/maps/mapcontrol?key=QSJ56V37iKKbwpEugBDc~Vl9Jy0hBTmdWDsVEeUAadQ~AjEJdhwpQsQqJ19C1DLE5zaww9I1Yl5D3TQuafKinpYoNEFanCI8s_hA-iK_BOHj&callback=MapLoaded"
+    scriptNode.src = `https://www.bing.com/api/maps/mapcontrol?key=${this.key}&callback=MapLoaded`
   
     head.appendChild(scriptNode);
   }
