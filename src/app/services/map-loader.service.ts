@@ -11,7 +11,7 @@ export class BingMapsLoader implements IMapLoader {
       this.promise = new Promise((resolve,reject) => {
         var _window = window as any;
         _window['MapLoaded'] = (event:any) => resolve('Map Loaded')
-        try {
+        try {``
           this.addMapScript();
         }
         catch{
