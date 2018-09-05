@@ -4,13 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {BingMapsLoader} from './services/map-loader.service';
-import { MapComponent } from './map/map.component'
+import { BingMapsLoader } from './services/map-loader.service';
 
 @NgModule({ 
   declarations: [
-    AppComponent,
-    MapComponent
+    AppComponent
   ],
   imports: [
     BrowserModule
