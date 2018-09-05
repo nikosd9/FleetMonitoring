@@ -20,6 +20,8 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "@types/bingmaps": "0.0.1",
+    "bingmaps": "^2.0.3",
     "core-js": "^2.5.4",
     "hoek": "^5.0.4",
     "rxjs": "^6.0.0",
